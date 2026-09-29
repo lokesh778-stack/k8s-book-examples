@@ -6,7 +6,7 @@
 
 - name: python prerequisites
   ansible.builtin.pip:
-    name: kubernetes>=24.2.0
+    name: kubernetes==34.1.0
     break_system_packages: true
 
 - name: manifests directory

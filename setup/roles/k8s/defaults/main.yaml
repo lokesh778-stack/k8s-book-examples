@@ -17,3 +17,6 @@ metrics_server_version: 0.8.1
 ingress_version: 1.15.1
 k8s_prometheus_version: "0.18"
 k8s_kube_vip_version: v1.2.4
+# Newer clients require Python packages newer than the Debian-installed ones
+# in Ubuntu 24.04 (e.g. PyYAML), which pip cannot uninstall
+k8s_python_client_version: 34.1.0

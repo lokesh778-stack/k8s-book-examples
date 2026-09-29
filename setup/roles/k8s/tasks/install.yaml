@@ -41,7 +41,7 @@
 
 - name: python prerequisites
   ansible.builtin.pip:
-    name: kubernetes>=24.2.0
+    name: kubernetes=={{ k8s_python_client_version }}
     break_system_packages: true
 
 - name: gpg key
